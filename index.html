@@ -10,10 +10,11 @@
     <header>
         <h1>Tic Tac Toe</h1>
     </header>
+
     <div id = "container">
-        <table>
+        <table id = "board">
             <tr>
-                <td class = "cell" id = "0">0</td>
+                <td class = "cell" id = "0"></td>
                 <td class = "cell" id = "1"></td>
                 <td class = "cell" id = "2"></td>
             </tr>
@@ -36,6 +37,42 @@
         </div>
     </div>
 
+    <div class = "score-container">
+        <table class = "score-table">
+            <tr class = "score-row">
+                <td rowspan="2" id = "game-option" class = "scores">1P</td>
+                <td class = "scores">Player O</td>
+                <td class = "scores">Draw</td>
+                <td class = "scores second-player">Computer X</td>
+            </tr>
+            <tr class = "score-row">
+                <td class = "scores score-O">0</td>
+                <td class = "scores score-tie">0</td>
+                <td class = "scores score-X">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- <div class = "score-container">
+        <p class = "swap scores">
+            <span class = "P1">1P</span>
+            <span class = "P2">2P</span>
+        </p>
+        <p class = "playerA scores">
+            <span>Player(X)</span>
+            <span class = "score">0</span>
+        </p>
+        <p class = "tieScore scores">
+            <span>Tie</span>
+            <span class = "score">0</span>
+        </p>
+        <p class = "playerB scores">
+            <span>Computer(O)</span>
+            <span class = "score">0</span>
+        </p>
+    </div> -->
+
     <script src="app.js"></script>
+    <script src="minimax.js"></script>
 </body>
 </html>
